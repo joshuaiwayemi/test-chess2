@@ -1,0 +1,197 @@
+:root{
+    --primary-color: #047aed;
+    --secondary-color: #009688;
+    --dark-color: #ef233c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow-y: hidden; */
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(0, 255, 106), rgb(0, 247, 255), green);
+}
+
+.learn-logo{
+    padding-top: 30px;
+}
+
+.learn-logo h2{
+    color: var(--secondary-color);
+    padding-left: 700px;
+    text-transform: uppercase;
+}
+
+.learn-logo h3{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 23px;
+    color: #fff;
+}
+
+.learn-logo i{
+    color: var(--secondary-color);
+    padding-left: 660px;
+    position: relative;
+    top: -34px;
+    font-size: 30px;
+}
+
+.learn-logo h2 span{
+    color: var(--dark-color);
+}
+
+.learn-img{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.learn-img img{
+    width: 450px;
+    height: 600px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.layer{
+    padding-top: 20px;
+    text-align: center;
+    height: 100%;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+    border-radius: 5px;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+ 
+.learn-boxes{
+    display: grid;
+    position: relative;
+    left: 550px;
+    top: -500px;
+}
+
+.learn-boxes img{
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    position: relative;
+    left: 330px;
+    top: -220px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.learn-boxes img:hover{
+    transform: translateY(-19px);
+    opacity: 0.8;
+}
+
+.box1{
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 3px 10px red;
+    width: 280px;
+    text-align: center;
+    text-shadow: 0 3px 10px var(--secondary-color);
+    color: #fff;
+    transition: .5s;
+}
+
+.box1:hover{
+    transform: translateY(-16px);
+}
+
+.box1-text {
+    margin-top: 70px;
+}
+
+
+.box2{
+    text-align: center;
+    height: 300px;
+    position: relative;
+    left: 600px;
+    top: -500px;
+    box-shadow: 0 3px 10px red;
+    width: 280px;
+    text-align: center;
+    text-shadow: 0 3px 10px var(--secondary-color);
+    color: #fff;
+    transition: .5s;
+}
+
+.box2:hover{
+    transform: translateY(-19px);
+}
+
+.box2-text{
+    margin-top: 70px;
+}
+
+
+marquee{
+    position: relative;
+    top: -835px;
+    color: var(--dark-color);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .learn-logo h2 {
+        color: var(--secondary-color);
+        padding-left: 119px;
+        text-transform: uppercase;
+    }
+
+    .fa-chess:before {
+        content: "\f439";
+        margin-left: -580px;
+    }
+
+    .learn-img img{
+        width: 900px;
+        height: 200px;
+        margin-left: -390px;
+        margin-top: 200px;
+        position: relati ve;
+        left: -350px;
+    }
+
+    marquee{
+        display: none;
+    }
+}
